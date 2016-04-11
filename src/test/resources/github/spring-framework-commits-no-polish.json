@@ -1,0 +1,352 @@
+[
+  {
+    "sha": "7737c3c",
+    "commit": {
+      "author": {
+        "name": "Juergen Hoeller",
+        "email": "jhoeller@pivotal.io",
+        "date": "2016-05-02T13:19:05Z"
+      },
+      "committer": {
+        "name": "Juergen Hoeller",
+        "email": "jhoeller@pivotal.io",
+        "date": "2016-05-02T13:19:05Z"
+      },
+      "message": "Warn about non-static BeanDefinitionRegistryPostProcessor declarations on @Configuration classes\n\nIssue: SPR-14234",
+      "tree": {
+        "sha": "03b355bd72dc30df77189165a6194ed364754d07",
+        "url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/03b355bd72dc30df77189165a6194ed364754d07"
+      },
+      "url": "https://api.github.com/repos/spring-projects/spring-framework/git/commits/7737c3c7e5e3ffe19e6cc151f1929982f5bba35d",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/spring-projects/spring-framework/commits/7737c3c7e5e3ffe19e6cc151f1929982f5bba35d",
+    "html_url": "https://github.com/spring-projects/spring-framework/commit/7737c3c7e5e3ffe19e6cc151f1929982f5bba35d",
+    "comments_url": "https://api.github.com/repos/spring-projects/spring-framework/commits/7737c3c7e5e3ffe19e6cc151f1929982f5bba35d/comments",
+    "author": {
+      "login": "jhoeller",
+      "id": 1263688,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1263688?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jhoeller",
+      "html_url": "https://github.com/jhoeller",
+      "followers_url": "https://api.github.com/users/jhoeller/followers",
+      "following_url": "https://api.github.com/users/jhoeller/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jhoeller/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jhoeller/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jhoeller/subscriptions",
+      "organizations_url": "https://api.github.com/users/jhoeller/orgs",
+      "repos_url": "https://api.github.com/users/jhoeller/repos",
+      "events_url": "https://api.github.com/users/jhoeller/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jhoeller/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jhoeller",
+      "id": 1263688,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1263688?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jhoeller",
+      "html_url": "https://github.com/jhoeller",
+      "followers_url": "https://api.github.com/users/jhoeller/followers",
+      "following_url": "https://api.github.com/users/jhoeller/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jhoeller/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jhoeller/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jhoeller/subscriptions",
+      "organizations_url": "https://api.github.com/users/jhoeller/orgs",
+      "repos_url": "https://api.github.com/users/jhoeller/repos",
+      "events_url": "https://api.github.com/users/jhoeller/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jhoeller/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cbc46760b74550fc573aaa62333cfdcb721a4e7b",
+        "url": "https://api.github.com/repos/spring-projects/spring-framework/commits/cbc46760b74550fc573aaa62333cfdcb721a4e7b",
+        "html_url": "https://github.com/spring-projects/spring-framework/commit/cbc46760b74550fc573aaa62333cfdcb721a4e7b"
+      }
+    ]
+  },
+  {
+    "sha": "cbc46760b74550fc573aaa62333cfdcb721a4e7b",
+    "commit": {
+      "author": {
+        "name": "Juergen Hoeller",
+        "email": "jhoeller@pivotal.io",
+        "date": "2016-05-02T11:54:57Z"
+      },
+      "committer": {
+        "name": "Juergen Hoeller",
+        "email": "jhoeller@pivotal.io",
+        "date": "2016-05-02T11:54:57Z"
+      },
+      "message": "Upgrade to Jackson 2.7.4",
+      "tree": {
+        "sha": "327af1dff6b57df6ceaea6c68f26996443a9c3c5",
+        "url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/327af1dff6b57df6ceaea6c68f26996443a9c3c5"
+      },
+      "url": "https://api.github.com/repos/spring-projects/spring-framework/git/commits/cbc46760b74550fc573aaa62333cfdcb721a4e7b",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/spring-projects/spring-framework/commits/cbc46760b74550fc573aaa62333cfdcb721a4e7b",
+    "html_url": "https://github.com/spring-projects/spring-framework/commit/cbc46760b74550fc573aaa62333cfdcb721a4e7b",
+    "comments_url": "https://api.github.com/repos/spring-projects/spring-framework/commits/cbc46760b74550fc573aaa62333cfdcb721a4e7b/comments",
+    "author": {
+      "login": "jhoeller",
+      "id": 1263688,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1263688?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jhoeller",
+      "html_url": "https://github.com/jhoeller",
+      "followers_url": "https://api.github.com/users/jhoeller/followers",
+      "following_url": "https://api.github.com/users/jhoeller/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jhoeller/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jhoeller/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jhoeller/subscriptions",
+      "organizations_url": "https://api.github.com/users/jhoeller/orgs",
+      "repos_url": "https://api.github.com/users/jhoeller/repos",
+      "events_url": "https://api.github.com/users/jhoeller/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jhoeller/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jhoeller",
+      "id": 1263688,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1263688?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jhoeller",
+      "html_url": "https://github.com/jhoeller",
+      "followers_url": "https://api.github.com/users/jhoeller/followers",
+      "following_url": "https://api.github.com/users/jhoeller/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jhoeller/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jhoeller/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jhoeller/subscriptions",
+      "organizations_url": "https://api.github.com/users/jhoeller/orgs",
+      "repos_url": "https://api.github.com/users/jhoeller/repos",
+      "events_url": "https://api.github.com/users/jhoeller/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jhoeller/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "07ea3745c49ec506e17dcb56107639cf36339d2c",
+        "url": "https://api.github.com/repos/spring-projects/spring-framework/commits/07ea3745c49ec506e17dcb56107639cf36339d2c",
+        "html_url": "https://github.com/spring-projects/spring-framework/commit/07ea3745c49ec506e17dcb56107639cf36339d2c"
+      }
+    ]
+  },
+  {
+    "sha": "07ea3745c49ec506e17dcb56107639cf36339d2c",
+    "commit": {
+      "author": {
+        "name": "Juergen Hoeller",
+        "email": "jhoeller@pivotal.io",
+        "date": "2016-05-02T11:54:47Z"
+      },
+      "committer": {
+        "name": "Juergen Hoeller",
+        "email": "jhoeller@pivotal.io",
+        "date": "2016-05-02T11:54:47Z"
+      },
+      "message": "Hacking",
+      "tree": {
+        "sha": "aae6620ea14cdcde222b848e05907b85b6488a2a",
+        "url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/aae6620ea14cdcde222b848e05907b85b6488a2a"
+      },
+      "url": "https://api.github.com/repos/spring-projects/spring-framework/git/commits/07ea3745c49ec506e17dcb56107639cf36339d2c",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/spring-projects/spring-framework/commits/07ea3745c49ec506e17dcb56107639cf36339d2c",
+    "html_url": "https://github.com/spring-projects/spring-framework/commit/07ea3745c49ec506e17dcb56107639cf36339d2c",
+    "comments_url": "https://api.github.com/repos/spring-projects/spring-framework/commits/07ea3745c49ec506e17dcb56107639cf36339d2c/comments",
+    "author": {
+      "login": "jhoeller",
+      "id": 1263688,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1263688?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jhoeller",
+      "html_url": "https://github.com/jhoeller",
+      "followers_url": "https://api.github.com/users/jhoeller/followers",
+      "following_url": "https://api.github.com/users/jhoeller/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jhoeller/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jhoeller/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jhoeller/subscriptions",
+      "organizations_url": "https://api.github.com/users/jhoeller/orgs",
+      "repos_url": "https://api.github.com/users/jhoeller/repos",
+      "events_url": "https://api.github.com/users/jhoeller/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jhoeller/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jhoeller",
+      "id": 1263688,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1263688?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jhoeller",
+      "html_url": "https://github.com/jhoeller",
+      "followers_url": "https://api.github.com/users/jhoeller/followers",
+      "following_url": "https://api.github.com/users/jhoeller/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jhoeller/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jhoeller/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jhoeller/subscriptions",
+      "organizations_url": "https://api.github.com/users/jhoeller/orgs",
+      "repos_url": "https://api.github.com/users/jhoeller/repos",
+      "events_url": "https://api.github.com/users/jhoeller/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jhoeller/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "09b45d2c0feee9ebdc7c03e3768cf834bf81a195",
+        "url": "https://api.github.com/repos/spring-projects/spring-framework/commits/09b45d2c0feee9ebdc7c03e3768cf834bf81a195",
+        "html_url": "https://github.com/spring-projects/spring-framework/commit/09b45d2c0feee9ebdc7c03e3768cf834bf81a195"
+      }
+    ]
+  },
+  {
+    "sha": "09b45d2",
+    "commit": {
+      "author": {
+        "name": "Stephane Nicoll",
+        "email": "snicoll@pivotal.io",
+        "date": "2016-05-02T11:33:05Z"
+      },
+      "committer": {
+        "name": "Stephane Nicoll",
+        "email": "snicoll@pivotal.io",
+        "date": "2016-05-02T11:33:05Z"
+      },
+      "message": "Validate callback is always invoked in DMLC#stop\n\nThe underlying issue has been fixed in e45d33f and this commit is merely\nadding a test of the expected behaviour.\n\nIssue: SPR-14233",
+      "tree": {
+        "sha": "1d1b0376d9927563527d53d11d768eac82511549",
+        "url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/1d1b0376d9927563527d53d11d768eac82511549"
+      },
+      "url": "https://api.github.com/repos/spring-projects/spring-framework/git/commits/09b45d2c0feee9ebdc7c03e3768cf834bf81a195",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/spring-projects/spring-framework/commits/09b45d2c0feee9ebdc7c03e3768cf834bf81a195",
+    "html_url": "https://github.com/spring-projects/spring-framework/commit/09b45d2c0feee9ebdc7c03e3768cf834bf81a195",
+    "comments_url": "https://api.github.com/repos/spring-projects/spring-framework/commits/09b45d2c0feee9ebdc7c03e3768cf834bf81a195/comments",
+    "author": {
+      "login": "snicoll",
+      "id": 490484,
+      "avatar_url": "https://avatars.githubusercontent.com/u/490484?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/snicoll",
+      "html_url": "https://github.com/snicoll",
+      "followers_url": "https://api.github.com/users/snicoll/followers",
+      "following_url": "https://api.github.com/users/snicoll/following{/other_user}",
+      "gists_url": "https://api.github.com/users/snicoll/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/snicoll/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/snicoll/subscriptions",
+      "organizations_url": "https://api.github.com/users/snicoll/orgs",
+      "repos_url": "https://api.github.com/users/snicoll/repos",
+      "events_url": "https://api.github.com/users/snicoll/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/snicoll/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "snicoll",
+      "id": 490484,
+      "avatar_url": "https://avatars.githubusercontent.com/u/490484?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/snicoll",
+      "html_url": "https://github.com/snicoll",
+      "followers_url": "https://api.github.com/users/snicoll/followers",
+      "following_url": "https://api.github.com/users/snicoll/following{/other_user}",
+      "gists_url": "https://api.github.com/users/snicoll/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/snicoll/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/snicoll/subscriptions",
+      "organizations_url": "https://api.github.com/users/snicoll/orgs",
+      "repos_url": "https://api.github.com/users/snicoll/repos",
+      "events_url": "https://api.github.com/users/snicoll/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/snicoll/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f83cbff543b3519c9288c1eee0ed3ae7e4c749d2",
+        "url": "https://api.github.com/repos/spring-projects/spring-framework/commits/f83cbff543b3519c9288c1eee0ed3ae7e4c749d2",
+        "html_url": "https://github.com/spring-projects/spring-framework/commit/f83cbff543b3519c9288c1eee0ed3ae7e4c749d2"
+      }
+    ]
+  },
+  {
+    "sha": "f83cbff543b3519c9288c1eee0ed3ae7e4c749d2",
+    "commit": {
+      "author": {
+        "name": "Juergen Hoeller",
+        "email": "jhoeller@pivotal.io",
+        "date": "2016-05-02T11:01:44Z"
+      },
+      "committer": {
+        "name": "Juergen Hoeller",
+        "email": "jhoeller@pivotal.io",
+        "date": "2016-05-02T11:01:44Z"
+      },
+      "message": "Consistent SmartLifecycle implementations\n\nIssue: SPR-14233",
+      "tree": {
+        "sha": "7c431cdd4c2a480d68383144f81f720736cc562e",
+        "url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/7c431cdd4c2a480d68383144f81f720736cc562e"
+      },
+      "url": "https://api.github.com/repos/spring-projects/spring-framework/git/commits/f83cbff543b3519c9288c1eee0ed3ae7e4c749d2",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/spring-projects/spring-framework/commits/f83cbff543b3519c9288c1eee0ed3ae7e4c749d2",
+    "html_url": "https://github.com/spring-projects/spring-framework/commit/f83cbff543b3519c9288c1eee0ed3ae7e4c749d2",
+    "comments_url": "https://api.github.com/repos/spring-projects/spring-framework/commits/f83cbff543b3519c9288c1eee0ed3ae7e4c749d2/comments",
+    "author": {
+      "login": "jhoeller",
+      "id": 1263688,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1263688?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jhoeller",
+      "html_url": "https://github.com/jhoeller",
+      "followers_url": "https://api.github.com/users/jhoeller/followers",
+      "following_url": "https://api.github.com/users/jhoeller/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jhoeller/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jhoeller/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jhoeller/subscriptions",
+      "organizations_url": "https://api.github.com/users/jhoeller/orgs",
+      "repos_url": "https://api.github.com/users/jhoeller/repos",
+      "events_url": "https://api.github.com/users/jhoeller/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jhoeller/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "jhoeller",
+      "id": 1263688,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1263688?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jhoeller",
+      "html_url": "https://github.com/jhoeller",
+      "followers_url": "https://api.github.com/users/jhoeller/followers",
+      "following_url": "https://api.github.com/users/jhoeller/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jhoeller/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jhoeller/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jhoeller/subscriptions",
+      "organizations_url": "https://api.github.com/users/jhoeller/orgs",
+      "repos_url": "https://api.github.com/users/jhoeller/repos",
+      "events_url": "https://api.github.com/users/jhoeller/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jhoeller/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e45d33f9de595d7348f3b4695960cb26bd9255c0",
+        "url": "https://api.github.com/repos/spring-projects/spring-framework/commits/e45d33f9de595d7348f3b4695960cb26bd9255c0",
+        "html_url": "https://github.com/spring-projects/spring-framework/commit/e45d33f9de595d7348f3b4695960cb26bd9255c0"
+      }
+    ]
+  }
+]

@@ -1,0 +1,123 @@
+/* navbar */
+nav.navbar {
+    margin: 0;
+}
+
+.navbar-default .dropdown-menu > li button {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    text-align: left;
+    width: 100%;
+}
+
+.navbar-default .dropdown-menu > li button:hover, .dropdown-menu > li button:focus {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #dd4814;
+}
+
+.navbar-btn, .navbar-btn:focus, .navbar-btn:hover, .navbar-btn:active {
+    background-color: #97310e;
+    border-color: #97310e;
+}
+
+/* layout */
+.wrapper {
+    padding: 0;
+}
+
+/* billboard */
+.billboard {
+    background: url("../img/cfp-background.png") no-repeat 0px -100px;;
+    background-size: cover;
+    padding: 70px 20px 20px 20px;
+    min-height: 400px;
+    text-align: center;
+}
+
+.billboard > div > h2 {
+    text-align: center;
+    color: #fff;
+    background: rgba(52, 48, 45, .5);
+    display: inline-block;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 68px;
+    padding: 0 15px;
+    letter-spacing: -2px;
+}
+
+/* commits */
+.commits .list-group-item {
+    min-height: 80px;
+}
+
+.commits .list-group-item > img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.panel-body > img {
+    float: left;
+    margin: 20px 20px 10px 10px;
+}
+
+/* days-since-last-polish */
+.days-since-last-polish {
+    color: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    width: 36em;
+    margin: 3em auto;
+    border: 1em solid #fff;
+    background: #fff;
+    -webkit-box-shadow: 0 0 2em #201f1e;
+    -moz-box-shadow: 0 0 2em #201f1e;
+    box-shadow: 0 0 2em #201f1e;
+}
+
+.days-since-last-polish > div {
+    background: #229260;
+    padding: 0.5em 3em;
+    border-radius: 2em;
+}
+
+.days-since-last-polish h2 {
+    font-size: 5em;
+}
+
+.days-since-last-polish h2 > span {
+    margin-top: 0.05em;
+    margin-bottom: 0.05em;
+    background-color: #efefef;
+    display: inline-block;
+    color: #201f1e;
+    border-radius: 0.25em;
+    min-width: 2em;
+}
+
+.days-since-last-polish hr {
+    background: #fff;
+    color: #fff;
+    height: 1em;
+    width: 100%;
+    border: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.days-since-last-polish p {
+    font-size: 3em;
+}
+
+/* login form */
+.login {
+    margin-top:10%;
+}

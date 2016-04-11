@@ -1,0 +1,4 @@
+= 10 ways to get super-productive with Spring Boot
+
+This sample project is going to be used for a talk demoing how Spring Boot helps
+you to be super-productive.

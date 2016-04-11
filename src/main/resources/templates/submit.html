@@ -1,0 +1,64 @@
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layouts/main">
+<head>
+    <title>Submit a new proposal</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="container">
+        <div class="page-header">
+            <h2>Submit a talk proposal</h2>
+        </div>
+        <form class="form-horizontal well bs-component col-lg-10 col-lg-offset-1"
+              method="post" th:action="@{/submit}"  th:object="${submissionForm}">
+            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+            <fieldset>
+                <div class="form-group" th:classappend="(${#fields.hasErrors('email')}? ' has-error')">
+                    <label for="email" class="col-lg-2 control-label">Email</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" id="email" name="email" th:field="*{email}" placeholder="Speaker email"/>
+                        <span class="help-block" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Incorrect email</span>
+                    </div>
+                </div>
+                <div class="form-group" th:classappend="(${#fields.hasErrors('name')}? ' has-error')">
+                    <label for="name" class="col-lg-2 control-label">Name</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" id="name" name="name" th:field="*{name}" placeholder="Speaker name"/>
+                        <span class="help-block" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Incorrect name</span>
+                    </div>
+                </div>
+                <div class="form-group" th:classappend="(${#fields.hasErrors('title')}? ' has-error')">
+                    <label for="title" class="col-lg-2 control-label">Title</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" id="title" name="title" th:field="*{title}" placeholder="Title"/>
+                        <span class="help-block" th:if="${#fields.hasErrors('title')}" th:errors="*{title}">Incorrect title</span>
+                    </div>
+                </div>
+                <div class="form-group" th:classappend="(${#fields.hasErrors('summary')}? ' has-error')">
+                    <label for="summary" class="col-lg-2 control-label">Summary</label>
+                    <div class="col-lg-10">
+                        <textarea class="form-control" rows="3" id="summary" name="summary" th:field="*{summary}"></textarea>
+                        <span class="help-block" th:unless="${#fields.hasErrors('summary')}">Describe your talk proposal here.</span>
+                        <span class="help-block" th:if="${#fields.hasErrors('summary')}" th:errors="*{summary}">Incorrect Summary</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="track" class="col-lg-2 control-label">Track</label>
+                    <div class="col-lg-10">
+                        <select class="form-control" id="track" name="track" th:field="*{track}">
+                            <option th:each="track : ${tracks}" th:value="${track.id}" th:text="${track.displayName}">Category</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                        <button type="reset" class="btn btn-default">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+</body>
+</html>

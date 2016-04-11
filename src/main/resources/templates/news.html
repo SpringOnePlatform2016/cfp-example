@@ -1,0 +1,41 @@
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layouts/main">
+<head>
+    <title>News</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="container">
+        <section class="days-since-last-polish">
+            <div>
+                <h2><span th:text="${daysSinceLastPolish}">2</span> DAYS</h2>
+                <hr/>
+                <p>since last Polish</p>
+            </div>
+        </section>
+        <div class="page-header">
+            <h2>Latest commits on Spring Framework</h2>
+        </div>
+        <div class="commits list-group">
+            <div th:each="commit : ${latestFrameworkCommits}" class="list-group-item">
+                <img height="50" width="50" th:src="${commit.committer.avatarUrl}"/>
+                <a th:href="'https://github.com/spring-projects/spring-framework/commit/' + ${commit.sha}" class="badge" th:text="${#strings.abbreviate(commit.sha, 11)}">deadb33f</a>
+                <h4 class="list-group-item-heading" th:text="${commit.message}">Fix a Spring Framework issue</h4>
+                <p class="list-group-item-text" th:inline="text">Committed by [[${commit.committer.name}]]</p>
+            </div>
+        </div>
+        <div class="page-header">
+            <h2>Latest commits on Spring Boot</h2>
+        </div>
+        <div class="commits list-group">
+            <div th:each="commit : ${latestBootCommits}" class="list-group-item">
+                <img height="50" width="50" th:src="${commit.committer.avatarUrl}"/>
+                <a th:href="'https://github.com/spring-projects/spring-boot/commit/' + ${commit.sha}" class="badge" th:text="${#strings.abbreviate(commit.sha, 11)}">deadb33f</a>
+                <h4 class="list-group-item-heading" th:text="${commit.message}">Fix a Spring Framework issue</h4>
+                <p class="list-group-item-text" th:inline="text">Committed by [[${commit.committer.name}]]</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

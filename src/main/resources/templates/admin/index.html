@@ -1,0 +1,32 @@
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layouts/main">
+<head>
+    <title>Admin - Submissions list</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="container">
+        <div class="page-header">
+            <h2>Cfp proposals</h2>
+        </div>
+        <table class="table table-striped table-hover ">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Speaker</th>
+                <th>Track</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:class="${viewHelper.submissionTableClass(submission.status)}" th:each="submission : ${submissions}">
+                <td th:text="${submission.id}">1</td>
+                <td th:text="${submission.title}">What's new in Spring Boot 1.4</td>
+                <td th:text="${submission.speakerName}">John Doe</td>
+                <td th:text="${submission.track.displayName}">Track name</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
