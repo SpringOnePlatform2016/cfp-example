@@ -38,6 +38,7 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
                 <li class="dropdown">
                     <a id="user-menu" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span sec:authentication="name">username</span> <span class="caret"></span></a>
                     <ul class="dropdown-menu">
+                        <li><a id="profile" href="https://github.com/settings/profile">GitHub Profile</a></li>
                         <li>
                             <form th:action="@{/logout}" method="post" role="logout">
                                 <button type="submit" class="btn btn-link">Sign Out</button>
