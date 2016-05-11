@@ -1,7 +1,7 @@
 <html xmlns:th="http://www.thymeleaf.org" xmlns:tiles="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
-    <title>Ooops, page not found</title>
+    <title th:text="'Ooops, ' + ${error}">Ooops, page not found</title>
     <style type="text/css">
         .wrapper {
             width: 100%;

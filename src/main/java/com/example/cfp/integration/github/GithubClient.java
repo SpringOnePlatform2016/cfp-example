@@ -13,7 +13,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
-import org.springframework.beans.factory.annotation.Value;
+import com.example.cfp.CfpProperties;
+
 import org.springframework.boot.actuate.metrics.CounterService;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.http.HttpHeaders;
@@ -40,10 +41,10 @@ public class GithubClient {
 	private final RestTemplate restTemplate;
 
 	public GithubClient(CounterService counterService, RestTemplateBuilder restTemplateBuilder,
-			@Value("${CFP_GITHUB_TOKEN:}") String token) {
+			CfpProperties properties) {
 		this.counterService = counterService;
 		this.restTemplate = restTemplateBuilder.additionalCustomizers(rt ->
-				rt.getInterceptors().add(new GithubAppTokenInterceptor(token))).build();
+				rt.getInterceptors().add(new GithubAppTokenInterceptor(properties.getGithub().getToken()))).build();
 	}
 
 	public List<Commit> getRecentCommits(String organization, String project) {
