@@ -8,7 +8,9 @@ public enum Track {
 
 	SERVER_SIDE_JAVA("Server side Java"),
 
-	MOBILE("Mobile");
+	MOBILE("Mobile"),
+
+	WEB("Web");
 
 	private String displayName;
 
