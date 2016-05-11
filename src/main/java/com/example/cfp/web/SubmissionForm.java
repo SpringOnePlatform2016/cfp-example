@@ -7,12 +7,6 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 class SubmissionForm {
 
-	@NotEmpty(message="Email should not be empty")
-	private String email;
-
-	@NotEmpty(message="Name should not be empty")
-	private String name;
-
 	@NotEmpty(message="Title should not be empty")
 	private String title;
 
@@ -21,22 +15,6 @@ class SubmissionForm {
 
 	@NotNull
 	private Track track;
-
-	public String getEmail() {
-		return this.email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getName() {
-		return this.name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
 
 	public String getTitle() {
 		return this.title;

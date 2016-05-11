@@ -1,12 +1,11 @@
 package com.example.cfp.submission;
 
 import com.example.cfp.domain.Track;
+import com.example.cfp.domain.User;
 
 public class SubmissionRequest {
 
-	private String email;
-
-	private String name;
+	private User speaker;
 
 	private String title;
 
@@ -14,20 +13,12 @@ public class SubmissionRequest {
 
 	private Track track;
 
-	public String getEmail() {
-		return this.email;
+	public User getSpeaker() {
+		return this.speaker;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getName() {
-		return this.name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
+	public void setSpeaker(User speaker) {
+		this.speaker = speaker;
 	}
 
 	public String getTitle() {
@@ -54,11 +45,6 @@ public class SubmissionRequest {
 		this.track = track;
 	}
 
-	public void setSpeaker(String email, String name) {
-		setEmail(email);
-		setName(name);
-	}
-
 	public void setTalk(String title, String summary, Track track) {
 		setTitle(title);
 		setSummary(summary);
@@ -72,8 +58,7 @@ public class SubmissionRequest {
 
 		SubmissionRequest that = (SubmissionRequest) o;
 
-		if (this.email != null ? !this.email.equals(that.email) : that.email != null) return false;
-		if (this.name != null ? !this.name.equals(that.name) : that.name != null) return false;
+		if (this.speaker != null ? !this.speaker.equals(that.speaker) : that.speaker != null) return false;
 		if (this.title != null ? !this.title.equals(that.title) : that.title != null) return false;
 		if (this.summary != null ? !this.summary.equals(that.summary) : that.summary != null) return false;
 		return this.track == that.track;
@@ -81,8 +66,7 @@ public class SubmissionRequest {
 
 	@Override
 	public int hashCode() {
-		int result = this.email != null ? this.email.hashCode() : 0;
-		result = 31 * result + (this.name != null ? this.name.hashCode() : 0);
+		int result = this.speaker != null ? this.speaker.hashCode() : 0;
 		result = 31 * result + (this.title != null ? this.title.hashCode() : 0);
 		result = 31 * result + (this.summary != null ? this.summary.hashCode() : 0);
 		result = 31 * result + (this.track != null ? this.track.hashCode() : 0);

@@ -18,8 +18,7 @@ public class SubmissionService {
 	@Transactional
 	public Submission create(SubmissionRequest request) {
 		Submission submission = new Submission();
-		submission.setSpeakerEmail(request.getEmail());
-		submission.setSpeakerName(request.getName());
+		submission.setSpeaker(request.getSpeaker());
 		submission.setTitle(request.getTitle());
 		submission.setSummary(request.getSummary());
 		submission.setTrack(request.getTrack());

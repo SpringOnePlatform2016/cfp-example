@@ -21,7 +21,7 @@
             <tr th:class="${viewHelper.submissionTableClass(submission.status)}" th:each="submission : ${submissions}">
                 <td th:text="${submission.id}">1</td>
                 <td th:text="${submission.title}">What's new in Spring Boot 1.4</td>
-                <td th:text="${submission.speakerName}">John Doe</td>
+                <td th:text="${submission.speaker.name}">John Doe</td>
                 <td th:text="${submission.track.displayName}">Track name</td>
             </tr>
             </tbody>

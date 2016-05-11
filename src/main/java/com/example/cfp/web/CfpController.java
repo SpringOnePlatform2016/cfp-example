@@ -3,9 +3,11 @@ package com.example.cfp.web;
 import javax.validation.Valid;
 
 import com.example.cfp.domain.Track;
+import com.example.cfp.domain.User;
 import com.example.cfp.submission.SubmissionRequest;
 import com.example.cfp.submission.SubmissionService;
 
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -32,22 +34,22 @@ public class CfpController {
 
 	@RequestMapping(path = "/submit", method = RequestMethod.POST)
 	public String submit(@Valid SubmissionForm submissionForm, BindingResult bindingResult,
-			RedirectAttributes attributes, Model model) {
+			@AuthenticationPrincipal User user, RedirectAttributes attributes, Model model) {
 		if (bindingResult.hasErrors()) {
 			model.addAttribute("tracks", Track.values());
 			model.addAttribute("submissionForm", submissionForm);
 			return "submit";
 		}
 		else {
-			this.submissionService.create(createRequest(submissionForm));
+			this.submissionService.create(createRequest(submissionForm, user));
 			attributes.addFlashAttribute("successMessage", "Thanks! Your talk proposal has been submitted.");
 			return "redirect:/submit";
 		}
 	}
 
-	private SubmissionRequest createRequest(SubmissionForm form) {
+	private SubmissionRequest createRequest(SubmissionForm form, User user) {
 		SubmissionRequest request = new SubmissionRequest();
-		request.setSpeaker(form.getEmail(), form.getName());
+		request.setSpeaker(user);
 		request.setTitle(form.getTitle());
 		request.setSummary(form.getSummary());
 		request.setTrack(form.getTrack());

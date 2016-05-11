@@ -7,7 +7,9 @@ import javax.persistence.Entity;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
+import javax.persistence.ManyToOne;
 
 @Entity
 @SuppressWarnings("serial")
@@ -17,11 +19,9 @@ public class Submission implements Serializable {
 	@Id
 	private Long id;
 
-	@Column(nullable = false)
-	private String speakerEmail;
-
-	@Column
-	private String speakerName;
+	@ManyToOne
+	@JoinColumn(name = "speaker_id")
+	private User speaker;
 
 	@Enumerated
 	private Track track;
@@ -44,20 +44,12 @@ public class Submission implements Serializable {
 		return this.id;
 	}
 
-	public String getSpeakerEmail() {
-		return this.speakerEmail;
+	public User getSpeaker() {
+		return speaker;
 	}
 
-	public void setSpeakerEmail(String speakerEmail) {
-		this.speakerEmail = speakerEmail;
-	}
-
-	public String getSpeakerName() {
-		return this.speakerName;
-	}
-
-	public void setSpeakerName(String speakerName) {
-		this.speakerName = speakerName;
+	public void setSpeaker(User speaker) {
+		this.speaker = speaker;
 	}
 
 	public Track getTrack() {
