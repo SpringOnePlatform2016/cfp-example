@@ -16,6 +16,8 @@ class SubmissionForm {
 	@NotNull
 	private Track track;
 
+	private String notes;
+
 	public String getTitle() {
 		return this.title;
 	}
@@ -39,4 +41,13 @@ class SubmissionForm {
 	public void setTrack(Track track) {
 		this.track = track;
 	}
+
+	public String getNotes() {
+		return this.notes;
+	}
+
+	public void setNotes(String notes) {
+		this.notes = notes;
+	}
+
 }

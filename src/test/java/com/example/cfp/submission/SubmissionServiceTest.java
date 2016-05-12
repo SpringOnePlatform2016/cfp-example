@@ -35,7 +35,8 @@ public class SubmissionServiceTest {
 				new User("john@example.com", "John Smith"));
 		SubmissionRequest request = new SubmissionRequest();
 		request.setSpeaker(speaker);
-		request.setTalk("Alice in Wonderland", "my abstract", Track.ALTERNATE_LANGUAGES);
+		request.setTalk("Alice in Wonderland", "my abstract", Track.ALTERNATE_LANGUAGES,
+				"this rocks");
 		Submission submission = this.submissionService.create(request);
 		assertThat(submission).isNotNull();
 		assertThat(submission.getSpeaker()).isNotNull();
@@ -43,6 +44,7 @@ public class SubmissionServiceTest {
 		assertThat(submission.getTitle()).isEqualTo("Alice in Wonderland");
 		assertThat(submission.getSummary()).isEqualTo("my abstract");
 		assertThat(submission.getTrack()).isEqualTo(Track.ALTERNATE_LANGUAGES);
+		assertThat(submission.getNotes()).isEqualTo("this rocks");
 		assertThat(submission.getStatus()).isEqualTo(SubmissionStatus.DRAFT);
 
 		List<Submission> submissions = this.submissionService.getSubmissionRepository()

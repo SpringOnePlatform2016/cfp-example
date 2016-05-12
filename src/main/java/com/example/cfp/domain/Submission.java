@@ -36,6 +36,10 @@ public class Submission implements Serializable {
 	@Lob
 	private String summary;
 
+	@Column
+	@Lob
+	private String notes;
+
 	public Submission() {
 		this.status = SubmissionStatus.DRAFT;
 	}
@@ -82,6 +86,14 @@ public class Submission implements Serializable {
 
 	public void setSummary(String summary) {
 		this.summary = summary;
+	}
+
+	public String getNotes() {
+		return this.notes;
+	}
+
+	public void setNotes(String notes) {
+		this.notes = notes;
 	}
 
 	@Override

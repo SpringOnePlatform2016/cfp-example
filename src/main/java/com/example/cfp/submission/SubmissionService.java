@@ -22,6 +22,7 @@ public class SubmissionService {
 		submission.setTitle(request.getTitle());
 		submission.setSummary(request.getSummary());
 		submission.setTrack(request.getTrack());
+		submission.setNotes(request.getNotes());
 		return this.submissionRepository.save(submission);
 	}
 

@@ -53,6 +53,7 @@ public class CfpController {
 		request.setTitle(form.getTitle());
 		request.setSummary(form.getSummary());
 		request.setTrack(form.getTrack());
+		request.setNotes(form.getNotes());
 		return request;
 	}
 

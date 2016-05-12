@@ -13,6 +13,8 @@ public class SubmissionRequest {
 
 	private Track track;
 
+	private String notes;
+
 	public User getSpeaker() {
 		return this.speaker;
 	}
@@ -45,10 +47,19 @@ public class SubmissionRequest {
 		this.track = track;
 	}
 
-	public void setTalk(String title, String summary, Track track) {
+	public String getNotes() {
+		return this.notes;
+	}
+
+	public void setNotes(String notes) {
+		this.notes = notes;
+	}
+
+	public void setTalk(String title, String summary, Track track, String notes) {
 		setTitle(title);
 		setSummary(summary);
 		setTrack(track);
+		setNotes(notes);
 	}
 
 	@Override

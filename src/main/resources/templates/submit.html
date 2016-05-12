@@ -29,6 +29,13 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label for="notes" class="col-lg-2 control-label">Notes</label>
+                    <div class="col-lg-10">
+                        <textarea class="form-control" rows="3" id="notes" name="notes" th:field="*{notes}"></textarea>
+                        <span class="help-block">A message for the selection committee.</span>
+                    </div>
+                </div>
+                <div class="form-group">
                     <label for="track" class="col-lg-2 control-label">Track</label>
                     <div class="col-lg-10">
                         <select class="form-control" id="track" name="track" th:field="*{track}">
